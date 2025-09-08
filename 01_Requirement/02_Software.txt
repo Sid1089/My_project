@@ -1,0 +1,44 @@
+🛠 Software Requirements for Project FROST
+
+1. Operating System (Development Environment)
+
+Windows 10/11, Linux (Ubuntu/Debian), or macOS
+
+Git installed for version control
+
+2. IDE / Toolchain
+Arduino IDE (v2.0.0 or higher)
+or
+PlatformIO (VS Code extension)
+
+3. ESP32 Board Support
+ESP32 Arduino Core (v2.0.11 or higher)
+Install via Arduino IDE Board Manager:
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+
+4. Required Arduino Libraries
+(Most can be installed via Arduino Library Manager or PlatformIO)
+Core Libraries (come with ESP32 package):
+WiFi.h
+BluetoothSerial.h or BLEDevice.h (depending on classic BT or BLE)
+
+Display Libraries:
+Wire.h (I2C communication)
+LiquidCrystal_I2C.h (16x2 I2C LCD driver)
+
+Audio / DAC:
+driver/dac.h (ESP-IDF DAC driver, included with ESP32 core)
+
+Data Handling:
+ArduinoJson.h (for structured data exchange via Bluetooth)
+
+Optional Helpers:
+FS.h / SPIFFS.h (if PCM audio file stored in ESP32 flash)
+SD.h (if using external SD card for audio file storage)
+
+5. Build & Upload Tools
+Python 3.x (needed for ESP32 build system)
+esptool.py (automatically installed with ESP32 core)
+
+6. Version Control
+GitHub repository to manage code and documentation

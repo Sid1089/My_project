@@ -1,0 +1,25 @@
+🔩 Hardware Requirements for Project FROST
+
+
+1. Core Controller
+ESP32 Development Board (with built-in Wi-Fi + Bluetooth)
+
+2. Sensors & Inputs
+IR Sensor (for motion/proximity detection or user interaction)
+
+3. Display
+OLED Display (e.g., 0.96" or 1.3", I2C, SSD1306 driver) and 
+16x2 LCD with I2C backpack (for easier wiring, only SDA/SCL pins needed)
+
+4. Audio Output
+Internal DAC of ESP32 (GPIO25 / GPIO26)
+(Optional: Audio amplifier module (e.g., PAM8403) for louder output)
+External Bluetooth Speaker (paired with ESP32 via Bluetooth)
+(ESP32 streams audio wirelessly instead of using DAC directly)
+
+5. Power Supply
+Micro-USB cable (for programming + powering ESP32)
+
+6. Other Components
+Breadboard (for prototyping)
+Jumper wires (male-male, male-female)
